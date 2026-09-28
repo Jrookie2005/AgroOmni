@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Training artifacts
+runs/
+outputs/
+checkpoints/
+logs/
+*.log
+wandb/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+deepspeed_config_*.json
+
+# Secrets / environment
+.env
+*.env
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp

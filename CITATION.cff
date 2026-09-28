@@ -1,0 +1,76 @@
+cff-version: 1.2.0
+message: "If you use AgroOmni or AgroNVILA in your research, please cite the paper below."
+title: "AgroOmni: A Large-Scale Multi-View Agricultural Dataset for Cross-Scale Multimodal Reasoning"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Jiarui
+  - family-names: Hu
+    given-names: Junqi
+  - family-names: Mai
+    given-names: Zurong
+  - family-names: Liu
+    given-names: Yang
+  - family-names: Chen
+    given-names: Yuhang
+  - family-names: Lou
+    given-names: Shuohong
+  - family-names: Huang
+    given-names: Henglian
+  - family-names: Cheng
+    given-names: Hong
+  - family-names: Zhao
+    given-names: Lingyuan
+  - family-names: Huang
+    given-names: Jianxi
+  - family-names: Lu
+    given-names: Yutong
+  - family-names: Fu
+    given-names: Haohuan
+  - family-names: Zheng
+    given-names: Juepeng
+repository-code: "https://github.com/Jrookie2005/AgroOmni"
+license: Apache-2.0
+abstract: >-
+  AgroOmni is a large-scale multi-view agricultural instruction-tuning corpus covering ground,
+  UAV, and satellite observations, together with AgroNVILA, a baseline model fine-tuned on it.
+  This repository contains the training code for the SFT stage.
+keywords:
+  - agricultural vision-language models
+  - multimodal large language models
+  - visual question answering
+  - remote sensing
+  - multi-view reasoning
+  - instruction tuning
+references:
+  - type: conference-paper
+    title: "AgroOmni: A Large-Scale Multi-View Agricultural Dataset for Cross-Scale Multimodal Reasoning"
+    authors:
+      - family-names: Zhang
+        given-names: Jiarui
+      - family-names: Hu
+        given-names: Junqi
+      - family-names: Mai
+        given-names: Zurong
+      - family-names: Liu
+        given-names: Yang
+      - family-names: Chen
+        given-names: Yuhang
+      - family-names: Lou
+        given-names: Shuohong
+      - family-names: Huang
+        given-names: Henglian
+      - family-names: Cheng
+        given-names: Hong
+      - family-names: Zhao
+        given-names: Lingyuan
+      - family-names: Huang
+        given-names: Jianxi
+      - family-names: Lu
+        given-names: Yutong
+      - family-names: Fu
+        given-names: Haohuan
+      - family-names: Zheng
+        given-names: Juepeng
+    collection-title: "Advances in Neural Information Processing Systems (NeurIPS)"
+    year: 2026
