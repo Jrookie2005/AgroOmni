@@ -4,13 +4,15 @@
 
 This repository contains the training code used in our paper **AgroOmni: A Large-Scale Multi-view Agricultural Dataset for Cross-Scale Multimodal Reasoning**.
 
-Modern agricultural data spans multiple spatial scales, from ground-level close-up photography to UAV and satellite remote sensing, yet existing multimodal large language models (MLLMs) are trained almost entirely on ground-level imagery. This causes a severe **ground-level bias**: aerial farmland scenes get misread as walls or floors, a failure we term *scale confusion* and *semantic collapse*. To close this gap, we introduce **AgroOmni**, a large-scale multi-view agricultural instruction-tuning corpus with **288K** VQA pairs covering **56 task categories** across **14 task types**. Built on it, **AgroNVILA** achieves a new state of the art of **62.32%** on the **AgroMind** benchmark (**+15.03%** over GPT-5.2), and improves substantially on **AgMMU** after even minimal fine-tuning.
+Modern agricultural data spans multiple spatial scales, from ground-level close-up photography to UAV and satellite remote sensing, yet existing multimodal large language models (MLLMs) are trained almost entirely on ground-level imagery. This causes a severe **ground-level bias**: aerial farmland scenes get misread as walls or floors, a failure we term *scale confusion* and *semantic collapse*. To close this gap, we introduce **AgroOmni**, a large-scale multi-view agricultural instruction-tuning corpus with **268,119** VQA pairs over **97,926** images, covering **56 task categories** across **14 task types**. Built on it, **AgroNVILA** reaches **59.86%** on the **AgroMind** benchmark (**+12.57** points over GPT-5.2), and improves substantially on **AgMMU** after even minimal fine-tuning.
 
 ## Links
 
 - **Paper**: <https://arxiv.org/html/2603.14342v2>
 - **Code**: <https://github.com/Jrookie2005/AgroOmni>
 - **Dataset**: <https://huggingface.co/datasets/AgroOmni/AgroOmni>
+- **Model (SFT)**: <https://huggingface.co/AgroOmni/AgroNVILA-SFT>
+- **Model (SFT + GRPO)**: <https://huggingface.co/AgroOmni/AgroNVILA>
 
 ## Official NVILA Instructions
 
@@ -33,8 +35,6 @@ The AgroOmni SFT entry script is:
 ```bash
 bash scripts/NVILA-Lite/agroomni_sft.sh <stage_path> AgroOmni <output_dir>
 ```
-
-Defaults in `scripts/NVILA-Lite/agroomni_sft.sh`:
 
 Defaults in `scripts/NVILA-Lite/agroomni_sft.sh`:
 
@@ -87,7 +87,7 @@ This script performs LoRA-based SFT with:
 
 ## RL Training
 
-The RL recipes for AgroNVILA -- GRPO, PPO, and the domain-aware DRPO variant -- are **coming soon**.
+The RL recipes for AgroNVILA -- GRPO, PPO, and the domain-aware DRPO variant -- are **coming soon**. The GRPO-aligned checkpoint is released at <https://huggingface.co/AgroOmni/AgroNVILA>.
 
 ## Notes
 
